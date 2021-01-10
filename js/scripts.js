@@ -19,6 +19,10 @@
         }
       }
     });
+
+    $('.portfolio-item').each(function(index){
+        $(this).delay(index*1000).fadeIn(500);
+    });
   
     // Scroll to top button appear
     $(document).scroll(function() {

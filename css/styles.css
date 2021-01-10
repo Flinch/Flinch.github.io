@@ -2452,6 +2452,10 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
+p{
+  font-size:18px !important;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #388087;
@@ -10050,7 +10054,7 @@ h3 {
 }
 @media (min-width: 992px) {
   .page-section .page-section-heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 2.5rem;
   }
 }
@@ -10116,8 +10120,8 @@ h3 {
 }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
 }
@@ -10146,8 +10150,8 @@ h3 {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
   #mainNav .navbar-brand {
@@ -10183,7 +10187,7 @@ h3 {
   padding-bottom: 6rem;
 }
 .masthead .masthead-heading {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   line-height: 2.75rem;
 }
 .masthead .masthead-subheading {
@@ -10195,15 +10199,15 @@ h3 {
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
+    /*padding-top: calc(6rem + 104px);*/
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
-    font-size: 4rem;
+    font-size: 2.5rem;
     line-height: 3.5rem;
   }
   .masthead .masthead-subheading {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 .portfolio .portfolio-item {
@@ -10256,7 +10260,7 @@ h3 {
 }
 .floating-label-form-group input,
 .floating-label-form-group textarea {
-  font-size: 1.5em;
+  font-size: 1.25em;
   position: relative;
   z-index: 1;
   padding-right: 0;
