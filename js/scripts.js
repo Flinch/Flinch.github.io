@@ -3,6 +3,8 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
     */
+
+
     (function($) {
     "use strict"; // Start of use strict
   
@@ -20,10 +22,59 @@
       }
     });
 
-    $('.portfolio-item').each(function(index){
-        $(this).delay(index*1000).fadeIn(500);
+
+    // $(window).on("load",function() {
+    //     $(window).scroll(function() {
+    //           var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    //           $(".fades").each(function() {
+    //                 /* Check the location of each desired element */
+    //                 var objectBottom = $(this).offset().top + $(this).outerHeight();
+                    
+    //                  If the element is completely within bounds of the window, fade it in 
+    //                 if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+    //                   if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+    //                 } else { //object goes out of view (scrolling up)
+    //                   if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+    //                 }
+    //           });
+    //     }).scroll(); //invoke scroll-handler on page-load
+    //   });
+
+      // Fade out effect on scroll 
+    $(window).on("load",function() {
+        function fade() {
+            var animation_height = $(window).innerHeight() * 0.25;
+            var ratio = Math.round( (1 / animation_height) * 10000 ) / 10000;
+
+            $('.fades').each(function() {
+
+                var objectTop = $(this).offset().top;
+                var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+
+                if ( objectTop < windowBottom ) {
+                    if ( objectTop < windowBottom - animation_height ) {
+                        $(this).css( {
+                            transition: 'opacity 0.1s linear',
+                            opacity: 1
+                        } );
+
+                    } else {
+                        $(this).css( {
+                            transition: 'opacity 0.25s linear',
+                            opacity: (windowBottom - objectTop) * ratio
+                        } );
+                    }
+                } else {
+                    $(this).css( 'opacity', 0 );
+                }
+            });
+        }
+        $('.fades').css( 'opacity', 0 );
+        fade();
+        $(window).scroll(function() {fade();});
     });
-  
+
+
     // Scroll to top button appear
     $(document).scroll(function() {
       var scrollDistance = $(this).scrollTop();
