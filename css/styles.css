@@ -10185,6 +10185,7 @@ h3 {
 .masthead {
   padding-top: 100px;
   padding-bottom: 6rem;
+  overflow: hidden;
 }
 .masthead .masthead-heading {
   font-size: 2.5rem;
@@ -10714,7 +10715,7 @@ a.sticky:hover > #hoverbar{
     visibility:visible;
 }
 
-@media(max-width:991px){
+@media(max-width:780px){
   .monkey{
   width: 250px;
   position: absolute;
@@ -10729,8 +10730,12 @@ a.sticky:hover > #hoverbar{
   position:absolute;
   left: -217px;
   top:900px;
+  visibility: hidden;
   }
 
+  a.sticky:hover > #hoverbar{
+    visibility:hidden;
+  }
 }
 
 
