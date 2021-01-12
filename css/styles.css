@@ -5561,7 +5561,7 @@ a.close.disabled {
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-  padding: 4rem 1rem;
+  padding: 1.5rem 1rem;
 }
 
 .modal-footer {
@@ -10201,7 +10201,7 @@ h3 {
 @media (min-width: 992px) {
   .masthead {
     /*padding-top: calc(6rem + 104px);*/
-    padding-bottom: 6rem;
+    padding-bottom: 7rem;
   }
   .masthead .masthead-heading {
     font-size: 2.5rem;
@@ -10219,6 +10219,11 @@ h3 {
   border-radius: 0.5rem;
   overflow: hidden;
 }
+
+.portfolio{
+  padding: 2.6rem 0rem 4rem 0rem;
+}
+
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
   top: 0;
@@ -10240,7 +10245,7 @@ h3 {
 }
 @media (min-width: 992px) {
   .portfolio-modal .portfolio-modal-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 2.5rem;
   }
 }
@@ -10249,7 +10254,7 @@ h3 {
   z-index: 1;
   right: 1.5rem;
   top: 1rem;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 3rem;
   color: #388087;
   opacity: 1;
@@ -10667,7 +10672,7 @@ ol li a{color:#fff;}
   z-index: 0;
   position:absolute;
   left: -255px;
-  top:818px;
+  top:845px;
 }
 
 .stork2{
@@ -10680,7 +10685,7 @@ ol li a{color:#fff;}
 .monkey{
   width: 250px;
   position: absolute;
-  top: 155.3rem;
+  top: 151.3rem;
   right: 0rem;
 }
 
@@ -10715,13 +10720,24 @@ a.sticky:hover > #hoverbar{
     visibility:visible;
 }
 
-@media(max-width:780px){
+@media(min-width:990px) and (max-width:1200px)
+{
+  ul li a.sticky
+  {
+     width:13.0em !important;
+  }
+}
+
+
+@media(max-width:990px){
   .monkey{
   width: 250px;
   position: absolute;
-  top: 160.3rem;
-  right: 0rem;
   visibility: hidden
+  }
+
+  .media-margin{
+    margin-left: 30px;
   }
 
   .stork{
@@ -10738,12 +10754,18 @@ a.sticky:hover > #hoverbar{
   }
 }
 
+@media(max-width:768px){
+  .ml-md-5{
+    margin-left: 3rem !important
+  }
+}
+
 
 @media (min-width: 1200px){
   .monkey{
     width: 340px;
     position: absolute;
-    top: 132.3rem;
+    top: 128.3rem;
     right: 0rem;
   }
 }
