@@ -10671,8 +10671,9 @@ ol li a{color:#fff;}
   width: 600px;
   z-index: 0;
   position:absolute;
-  left: -255px;
+  left: -320px;
   top:845px;
+  /*visibility: hidden;*/
 }
 
 .stork2{
