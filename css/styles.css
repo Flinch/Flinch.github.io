@@ -2443,7 +2443,7 @@ textarea.form-control {
 }
 .btn:focus, .btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.25);
+  box-shadow: 0 0 0 0.2rem rgb(210 187 21 / 25%)
 }
 .btn.disabled, .btn:disabled {
   opacity: 0.65;
@@ -2721,8 +2721,8 @@ p{
 }
 
 .btn-outline-primary {
-  color: #388087;
-  border-color: #388087;
+  color: #caa118;
+  border-color: #caa118;
 }
 .btn-outline-primary:hover {
   color: #fff;
@@ -4031,7 +4031,7 @@ input[type=button].btn-block {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.0rem;
   line-height: inherit;
   white-space: nowrap;
 }
@@ -10776,7 +10776,7 @@ ol li a{color:#fff;}
 .monkey{
   width: 250px;
   position: absolute;
-  top: 136.3rem;
+  top: 133.3rem;
   right: 0rem;
 }
 
@@ -10861,7 +10861,7 @@ a.sticky:hover > #hoverbar{
   .monkey{
     width: 340px;
     position: absolute;
-    top: 128.3rem;
+    top: 127.3rem;
     right: 0rem;
   }
 }
